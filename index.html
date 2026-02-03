@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Proposal - Web Programming</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+<div id="proposal-container">
+    <header>
+        <div class="uni-logo-text">Al-Aqsa University</div>
+        <h1>Web Programming Course - Final Project Proposal</h1>
+        <h2>ENGS3304</h2>
+        <div class="arabic-title">جامعة الأقصى - كلية الحاسبات وتكنولوجيا المعلومات</div>
+    </header>
+
+    <form id="proposal-form">
+        
+        <fieldset>
+            <legend>1. Student Information</legend>
+            <div class="form-group">
+                <label>Student Name(s) (Max 2)</label>
+                <input type="text" id="student_names" placeholder="Enter name or team member names">
+            </div>
+            <div class="form-group">
+                <label>Student ID(s)</label>
+                <input type="text" placeholder="Enter student ID(s)">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Project Overview</legend>
+            <div class="form-group">
+                <label>Project Title</label>
+                <input type="text" id="project_title" placeholder="Clear and descriptive title">
+            </div>
+            <div class="form-group">
+                <label>Project Description <span class="hint">(Minimum 200 words)</span></label>
+                <textarea rows="6" placeholder="Provide a comprehensive overview..."></textarea>
+            </div>
+            <div class="form-group">
+                <label>Problem Statement</label>
+                <textarea placeholder="Describe the problem or need..."></textarea>
+            </div>
+            <div class="form-group">
+                <label>Solution Approach</label>
+                <textarea placeholder="How will your project solve the problem?"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Target Audience</label>
+                <input type="text" placeholder="Who will use your application?">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Technical Specifications</legend>
+            
+            <div class="row">
+                <div class="col">
+                    <h4>Frontend Technologies</h4>
+                    <div class="form-group">
+                        <label>Framework/Library</label>
+                        <input type="text" placeholder="e.g., React, Vue, Pure JS">
+                    </div>
+                    <div class="form-group">
+                        <label>Styling</label>
+                        <input type="text" placeholder="e.g., Tailwind CSS, Bootstrap, CSS3">
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>Backend Technologies</h4>
+                    <div class="form-group">
+                        <label>Programming Language</label>
+                        <input type="text" placeholder="e.g., PHP, JavaScript (Node)">
+                    </div>
+                    <div class="form-group">
+                        <label>Database</label>
+                        <input type="text" placeholder="e.g., MySQL, SQL Server">
+                    </div>
+                </div>
+            </div>
+
+            <h4>Development Tools & Environment</h4>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label>Version Control (GitHub Link)</label>
+                        <input type="url" placeholder="Repository link">
+                    </div>
+                    <div class="form-group">
+                        <label>Code Editor</label>
+                        <input type="text" placeholder="e.g., VS Code">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label>AI Tools Integration</label>
+                        <input type="text" placeholder="e.g., Cursor, GitHub Copilot">
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. Project Features</legend>
+            <div class="form-group">
+                <label>Core Features (Minimum 5)</label>
+                <textarea rows="5" placeholder="1. Feature one&#10;2. Feature two..."></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>5. Challenges & Learning</legend>
+            <div class="form-group">
+                <label>Expected Challenges</label>
+                <textarea placeholder="List expected challenges..."></textarea>
+            </div>
+        </fieldset>
+
+        <div class="btn-container" data-html2canvas-ignore="true">
+            <button type="button" id="download-btn">Download as PDF</button>
+            <div class="hint" style="margin-top:10px;">Note: Please fill all fields before downloading.</div>
+        </div>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

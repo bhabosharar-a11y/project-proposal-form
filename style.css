@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #006d5b;
+    --secondary-color: #f4f4f4;
+    --text-color: #333;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+#proposal-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.uni-logo-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 18px;
+    color: #555;
+    margin-top: 0;
+}
+
+header .arabic-title {
+    font-family: 'Traditional Arabic', serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #fff;
+    page-break-inside: avoid;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 10px;
+    font-size: 1.1em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="url"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    background: #fafafa;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #005446;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.hint {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 4px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
