@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const fileName = `${cleanName}_${cleanTitle}_Proposal.pdf`;
 
         // 3. إعداد خيارات التحويل
-        const opt = {
-            margin:       [0.5, 0.5], // الهوامش (بوصة)
-            filename:     fileName,
-            image:        { type: 'jpeg', quality: 0.98 },
-            html2canvas:  { scale: 2 }, // زيادة الدقة
-            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-        };
+     const opt = {
+    margin:       [0.5, 0.5], 
+    filename:     fileName,
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2, scrollY: 0 }, // أضفنا scrollY: 0 هنا
+    jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+};
 
         // 4. تغيير نص الزر ليعرف المستخدم أن العملية جارية
         const originalText = downloadBtn.innerText;
