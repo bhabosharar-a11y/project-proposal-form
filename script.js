@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
     margin:       [0.5, 0.5], 
     filename:     fileName,
     image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2, scrollY: 0 }, // أضفنا scrollY: 0 هنا
-    jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+    html2canvas:  { scale: 2, scrollY: 0 },
+    jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
+    pagebreak:    { mode: 'avoid-all' } // أضفنا هذا السطر السحري هنا
 };
-
         // 4. تغيير نص الزر ليعرف المستخدم أن العملية جارية
         const originalText = downloadBtn.innerText;
         downloadBtn.innerText = "Generating PDF...";
